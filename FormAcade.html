@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" type="text/css" href="formacad.css">
+
+    <link rel="shortcut icon" href="Icon1.png"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Formacion Academica</h1>
+
+        <form action="formaacad.php" method="POST">
+            <form action="prueba.html" method="post">
+        <div class="education-form">
+            <label for="university">Nombre de la Institucion:</label>
+            <input type="text" name = "nombreInstitucion" placeholder="Ejemplo: Universidad XYZ" required>
+
+            <label for="degree">Titulo obtenido:</label>
+            <input type="text" name="tituloObtenido" placeholder="Ejemplo: Licenciatura en Informatica" required>
+
+            <label for="period">Periodo:</label>
+            <input type="text" name="periodo" placeholder="Ejemplo: Enero 2010 - Diciembre 2014" required>
+
+            <label for="education-level">Nivel de Educacion:</label>
+            <select name="nivelEducacion" id="education-level" required>
+                <option value="Educación Básica">Educacion Basica</option>
+                <option value="Educación Media">Educacion Media</option>
+                <option value="Educación Superior">Educacion Superior</option>
+            </select>
+        </div>
+
+        <div id="education-list" class="education-item">
+            <!-- La información ingresada se mostrará aquí -->
+        </div>
+
+        <div class="buttons">
+            <button id="send-button" type="submit">Enviar</button>
+            <button id="back-button">Volver</button>
+        </div>
+    </form>
+    </div>
+    <script>
+        document.getElementById("back-button").addEventListener("click", function() {
+            window.history.back();
+        });
+    </script>
+</form>
+</body>
+</html>

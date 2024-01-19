@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="interfazR.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="Icon1.png"/>
+</head>
+<body>
+    <section class="form-main">
+        <div class="form-content">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+
+            <form action="registro.php" method="post">
+                <form action="index.html" method="post">
+            
+            <div class="input-box">
+                <input type="text" placeholder="Nombres" name="nombres" id="nombres" class="input-control" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Apellidos" name="Apellidos" id="Apellidos" class="input-control" required>
+            </div>
+
+            <div class="input-box">
+                <input type="email" placeholder="Correo" name="Correo" id="Correo" class="input-control" required>
+            </div>
+            
+            <div class="input-box">
+                <input type="number" placeholder="Telefono" name="Telefono" id="Telefono" class="input-control" required>
+            </div>
+
+            <div class="input-box">
+                <input type="text" placeholder="Contraseña" name="Contraseña" id="Contraseña" class="input-control" required>
+            </div>
+
+            <div class="fecha_nac">Fecha de nacimiento</div>
+            
+            <div class="input-box">
+                <input type="date" placeholder="fecha" name="fecha" id="fecha" class="input-fecha" required>
+            </div>
+
+                <div class="input-link" style="margin-top: 10px;">
+                    <button type="submit" class="btn" id="enviar-button">Enviar</button> 
+                    <button type="submit" class="btn" onclick="history.back()">Volver</button>
+                </div>
+            </form>
+            </form>
+        </div> 
+    </section>  
+</body>
+</html>

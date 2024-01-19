@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencias</title>
+    <link rel="stylesheet" type="text/css" href="refelabo.css">
+
+    <link rel="shortcut icon" href="Icon1.png"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Referencias Laborales y Familiares</h1>
+        <form action="Refelabo.php" method="POST">
+            <form action="prueba.html" method="post">
+
+        <section>
+            <h2>Referencias Laborales</h2>
+            <div class="reference-section">
+                <label for="company-name">Nombre de la Empresa:</label>
+                <input type="text" name="companyname" placeholder="Ejemplo: ABC Company" required>
+
+                <label for="contact-name">Nombre del Contacto:</label>
+                <input type="text" name="contactname" placeholder="Ejemplo: Juan Pérez" required>
+
+                <label for="contact-email">Correo Electrónico del Contacto:</label>
+                <input type="email" name="contactemail" placeholder="Ejemplo: juan@example.com" required>
+            </div>
+        </section>
+
+        <section>
+            <h2>Referencias Familiares</h2>
+            <div class="reference-section">
+                <label for="family-name">Nombre del Familiar:</label>
+                <input type="text" name="familyname" placeholder="Ejemplo: María Pérez" required>
+
+                <label for="relationship">Parentesco:</label>
+                <input type="text" name="relationship" placeholder="Ejemplo: Primo" required>
+            </div>
+        </section>
+
+        <div class="buttons">
+            <button id="send-button" type="submit">Enviar</button>
+            <button id="back-button">Volver</button>
+        </div>
+    </form>
+    </div>
+    <script>
+        document.getElementById("back-button").addEventListener("click", function() {
+            window.history.back();
+        });
+    </script>
+</form>
+</body>
+</html>

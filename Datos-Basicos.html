@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" type="text/css" href="DatosBas.css">
+
+    <link rel="shortcut icon" href="Icon1.png"/>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Datos del Usuario</h1>
+        <form action="DatosBas.php" method="POST">
+            <form action="prueba.html" method="post">
+
+                <div class="education-form">
+                    <label for="university">Nombres :</label>
+                    <input type="text" name="Nombre" placeholder="Ejemplo: Juan" required>
+        
+                    <label for="degree">Apellidos:</label>
+                    <input type="text" name="Apellido" placeholder="Ejemplo: Osorio" required>
+        
+                    <label for="degree">Correo:</label>
+                    <input type="text" name="Correo" placeholder="Ejemplo: xxxxx@gmail.com" required>
+        
+                    <label for="period">Telefono:</label>
+                    <input type="text" name="Telefono" placeholder="Ejemplo: 3xx xxx xxxx" required> 
+                </div>
+            
+                <div class="buttons">
+                    <button id="send-button" type="submit">Enviar</button>
+                    <button id="back-button">Volver</button>
+                </div>
+            </form>
+            </div>
+            <script>
+                document.getElementById("back-button").addEventListener("click", function() {
+                    window.history.back();
+                });
+            </script>
+        </form>
+        </body>
+        </html>
